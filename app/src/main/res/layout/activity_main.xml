@@ -1,38 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.rob.udacity.MainActivity">
-
-
-
-    <ImageView
-        android:id="@+id/party"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/android_party"
-        android:scaleType="fitXY"/>
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context="com.rob.udacityfree.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Happy Birthday Ben"
-        android:layout_alignParentTop="true"
+        android:paddingBottom="0dp"
+        android:paddingLeft="16dp"
         android:paddingTop="20dp"
-        android:paddingLeft="20dp"
+        android:text="quanity"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="-"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:onClick="oneLess"/>
+
+        <TextView
+            android:id="@+id/quanity_in_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="0dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="20dp"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="+"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:onClick="oneMore"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="20dp"
+        android:text="price"
+        android:textAllCaps="true"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@color/white"
         android:textStyle="bold"/>
 
     <TextView
+        android:id="@+id/price_in_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="From Rob"
-        android:textColor="@color/white"
-        android:layout_alignRight="@id/party"
-        android:layout_alignParentBottom="true"
+        android:paddingBottom="0dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="20dp"
+        android:text="$ 0"
         android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
         />
-</RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/colorAccent"
+        android:onClick="submitOrder"
+        android:padding="10dp"
+        android:text="order"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>
