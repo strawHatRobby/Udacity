@@ -5,10 +5,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
+
 public class MainActivity extends AppCompatActivity {
 
     private int numberOfCoffees = 0;
-    private int pricePerCup = 25;
+    private float pricePerCup = 25;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,9 +50,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void displayPrice(int number) {
+    public void displayPrice(float number) {
         TextView priceTextView = (TextView) findViewById(R.id.price_in_number);
-        priceTextView.setText("$ " + number);
+        priceTextView.setText("$ " + String.format("%.2f",number));
     }
 }
 
