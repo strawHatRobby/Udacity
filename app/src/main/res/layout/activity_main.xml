@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,6 +12,125 @@
     android:background="@color/colorPrimaryDark"
     android:orientation="vertical"
     tools:context="com.rob.udacityfree.MainActivity">
+
+    <TextView
+        android:id="@+id/hello_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="Hello There"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/name_text_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Enter your name"
+        android:textColorHighlight="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="Toppings"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+    <CheckBox
+        android:id="@+id/chocolate_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:buttonTint="@color/white"
+        android:onClick="checkWhippedCream"
+        android:paddingLeft="24dp"
+        android:text="Chocolate"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:id="@+id/chilled_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:buttonTint="@color/white"
+        android:onClick="checkWhippedCream"
+        android:paddingLeft="24dp"
+        android:text="Make It Chilled"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:id="@+id/whipped_cream_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:buttonTint="@color/white"
+        android:onClick="checkWhippedCream"
+        android:paddingLeft="24dp"
+        android:text="Whipped Cream"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:id="@+id/caramel_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:buttonTint="@color/white"
+        android:onClick="checkWhippedCream"
+        android:paddingLeft="24dp"
+        android:text="Caramel"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+    <CheckBox
+        android:id="@+id/white_chocolate_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:buttonTint="@color/white"
+        android:onClick="checkWhippedCream"
+        android:paddingLeft="24dp"
+        android:text="White Chocolate"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+    <CheckBox
+        android:id="@+id/pumpkin_cream_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:buttonTint="@color/white"
+        android:onClick="checkWhippedCream"
+        android:paddingLeft="24dp"
+        android:text="Pumpkin Cream"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -23,27 +147,29 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="16dp">
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
             android:background="@color/colorAccent"
+            android:minHeight="10dp"
+            android:minWidth="10dp"
+            android:onClick="oneLess"
+            android:padding="10dp"
             android:text="-"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="@color/white"
-            android:padding="10dp"
-            android:onClick="oneLess"
-            android:layout_weight="1"
-            android:minWidth="10dp"
-            android:minHeight="10dp"
-            android:layout_gravity="center"/>
+            android:textColor="@color/white"/>
 
         <TextView
             android:id="@+id/quanity_in_number"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="21"
             android:paddingBottom="0dp"
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
@@ -51,23 +177,21 @@
             android:text="0"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="@color/white"
-            android:layout_weight="21"
-            android:layout_gravity="center"
             />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
             android:background="@color/colorAccent"
-            android:text="+"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/white"
+            android:minHeight="10dp"
+            android:minWidth="10dp"
             android:onClick="oneMore"
             android:padding="10dp"
-            android:layout_weight="1"
-            android:minWidth="10dp"
-            android:minHeight="10dp"
-            android:layout_gravity="center"/>
+            android:text="+"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"/>
 
     </LinearLayout>
 
@@ -111,3 +235,4 @@
 
 
 </LinearLayout>
+</ScrollView>
