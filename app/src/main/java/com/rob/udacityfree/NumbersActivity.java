@@ -35,7 +35,7 @@ public class NumbersActivity extends AppCompatActivity {
         }
 
         // context, view_name, data_passed
-        WordAdapter<Word> itemsAdapter = new WordAdapter<Word>(this, R.layout.list_text_view_1, words);
+        WordAdapter<Word> itemsAdapter = new WordAdapter<Word>(this, words);
 
 //        // Create a listView object
 //        GridView gridView = (GridView)findViewById(R.id.grid);

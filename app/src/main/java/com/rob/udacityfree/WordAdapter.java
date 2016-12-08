@@ -24,7 +24,10 @@ import static android.R.attr.resource;
 public class WordAdapter<W> extends ArrayAdapter<Word> {
 
 
-    public WordAdapter(Context context, @LayoutRes int resource, List<Word> objects) {
+    public WordAdapter(Context context, List<Word> objects) {
+        // passed in 0 for resource id because we are inflating it ourselves as this view won't
+        // be used for anyt other type of listView
+
         super(context, 0, objects);
     }
 
