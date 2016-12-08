@@ -4,52 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/tan_background"
+    android:orientation="vertical"
     tools:context="com.rob.udacityfree.MainActivity">
 
 
     <TextView
-        style="@style/CatergoryStyle"
-        android:background="@color/category_numbers"
-        android:layout_height="wrap_content"
         android:id="@+id/numbers_acitivity_text_view"
+        style="@style/CatergoryStyle"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/category_numbers"
         android:text="Numbers"
-        android:layout_alignParentBottom="true"
         android:textAppearance="?android:attr/textAppearanceLarge"
         />
+
     <TextView
-        style="@style/CatergoryStyle"
         android:id="@+id/family_activity_text_view"
-        android:background="@color/category_family"
-        android:layout_height="wrap_content"
+        style="@style/CatergoryStyle"
         android:layout_width="match_parent"
-        android:text="Family"
-        android:padding="16dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:background="@color/category_family"
+        android:padding="16dp"
+        android:text="Family"
         android:textAppearance="?android:attr/textAppearanceLarge"
         />
+
     <TextView
-        style="@style/CatergoryStyle"
-        android:background="@color/category_colors"
         android:id="@+id/colors_activity_text_view"
-        android:layout_height="wrap_content"
+        style="@style/CatergoryStyle"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/category_colors"
         android:padding="16dp"
         android:text="Colors"
-        android:layout_alignParentBottom="true"
         android:textAppearance="?android:attr/textAppearanceLarge"
         />
+
     <TextView
-        style="@style/CatergoryStyle"
         android:id="@+id/phrases_activity_text_view"
-        android:background="@color/category_phrases"
-        android:layout_height="wrap_content"
+        style="@style/CatergoryStyle"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/category_phrases"
         android:padding="16dp"
         android:text="Phrases"
-        android:layout_alignParentBottom="true"
         android:textAppearance="?android:attr/textAppearanceLarge"
         />
 

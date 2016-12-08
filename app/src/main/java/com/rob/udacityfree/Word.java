@@ -6,7 +6,8 @@ package com.rob.udacityfree;
 public class Word {
     private String mMiwokWord;
     private String mDefaultWord;
-    private int mImageSource;
+    private static final int DOES_NOT_HAVE_IMAGE_VIEW = -1;
+    private int mImageSource = DOES_NOT_HAVE_IMAGE_VIEW;
 
     public int getImageSource() {
         return mImageSource;
@@ -48,5 +49,14 @@ public class Word {
 
     public void setDefaultWord(String defaultWord) {
         mDefaultWord = defaultWord;
+    }
+
+    public boolean hasImageView(){
+        if(mImageSource == DOES_NOT_HAVE_IMAGE_VIEW){
+            return false;
+        }
+        else{
+            return true;
+        }
     }
 }

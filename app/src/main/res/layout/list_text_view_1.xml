@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:tools="http://schemas.android.com/tools"
-              android:orientation="horizontal"
-              android:paddingLeft="16dp"
-              android:paddingTop="16dp"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
+              android:orientation="horizontal"
 
     >
 
-<ImageView
-    android:id="@+id/word_image"
-    android:paddingRight="16dp"
-    android:layout_height="wrap_content"
-    android:layout_width="wrap_content"
-    android:src="@drawable/color_black"
-    android:scaleType="fitCenter"
+    <ImageView
+        android:id="@+id/word_image"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:background="@color/tan_background"
+        android:src="@drawable/color_black"
+        />
 
-    />
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/miwok_text"
-
-    android:textStyle="bold"
-    android:textColor="#000"
-    android:textAppearance="?android:attr/textAppearanceMedium"
-    tools:text="Miwork"
-/>
-
-    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/default_text"
-        tools:text="Engish"/>
+        android:layout_height="88dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/miwok_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            tools:text="Miwork"
+            />
+
+        <TextView
+            android:id="@+id/default_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            tools:text="Engish"/>
     </LinearLayout>
 </LinearLayout>

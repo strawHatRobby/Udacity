@@ -57,8 +57,14 @@ public class WordAdapter<W> extends ArrayAdapter<Word> {
 
         miwokTextView.setText(currentWord.getMiwokWord());
         defaultTextView.setText(currentWord.getDefaultWord());
-        imageView.setImageResource(currentWord.getImageSource());
-
+        if(currentWord.hasImageView()) {
+            imageView.setImageResource(currentWord.getImageSource());
+            imageView.setVisibility(View.VISIBLE);
+        }
+        else{
+            imageView.setVisibility(View.GONE);
+        }
+ 
 
         return listItemView;
     }
