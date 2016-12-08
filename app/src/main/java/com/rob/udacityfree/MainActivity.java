@@ -6,12 +6,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     private TextView mNumberActivityTextView;
     private  TextView mFamilyActivityTextView;
     private TextView mPhrasesActivityTextView;
     private  TextView mColorsActivityTextView;
+
+
+    ArrayList<String> temp = new ArrayList<String>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
